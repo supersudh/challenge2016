@@ -1,11 +1,11 @@
-/**
- * Created by Zhengfeng Yao on 16/8/27.
- */
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-import app from './app';
+import { reducerCreator } from 'redux-amrc';
+import { reducer as formReducer } from 'redux-form';
+import counter from './counter';
 
-export default combineReducers({
-  app,
-  routing: routerReducer,
+const rootReducer = combineReducers({
+  async: reducerCreator({ counter }),
+  form: formReducer
 });
+
+export default rootReducer;
