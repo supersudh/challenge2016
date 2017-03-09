@@ -1,0 +1,15 @@
+@import "../mixins/motion.less";
+@import "./motion/fade.less";
+@import "./motion/move.less";
+@import "./motion/other.less";
+@import "./motion/slide.less";
+@import "./motion/swing.less";
+@import "./motion/zoom.less";
+
+// For common/openAnimation
+.shield-motion-collapse {
+  overflow: hidden;
+  &-active {
+    transition: height .2s @ease-out;
+  }
+}

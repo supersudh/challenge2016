@@ -1,0 +1,6 @@
+{
+  host: 'localhost',
+  port: 3000,
+  hostname: 'http://localhost:3000',
+  title: 'Your title'
+}
